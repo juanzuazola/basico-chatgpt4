@@ -9,6 +9,7 @@
     <!-- Agrega aquí tus archivos CSS de Bootstrap -->
 </head>
 <body>
+<div class="container mt-4">
     <form:form method="POST" action="/recogerDatos" modelAttribute="producto">
         <div class="form-group">
             <label for="id">ID</label>
@@ -26,7 +27,9 @@
             <label for="fechaGarantia">Fecha de Garantía</label>
             <form:input path="fechaGarantia" id="fechaGarantia" class="form-control" required="true"/>
         </div>
-        <button type="submit" class="btn btn-primary">Guardar</button>
+        <button type="submit" class="btn btn-primary mt-4">Guardar</button>
     </form:form>
+    </div>
 </body>
+
 </html>
