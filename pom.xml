@@ -18,8 +18,9 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
-		<!-- JSTL (Jakarta Standard Tag Library) -->
 		
+		<!-- JSTL (Jakarta Standard Tag Library): Esta biblioteca proporciona un conjunto de etiquetas 
+		para ayudar a simplificar el desarrollo de páginas JSP.-->
 		<dependency>
 			<groupId>org.glassfish.web</groupId>
 			<artifactId>jakarta.servlet.jsp.jstl</artifactId>
@@ -29,41 +30,70 @@
 			<artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
 		</dependency>
 	
-		
+		<!-- 
+			spring-boot-starter-web: Esta es una dependencia inicializadora para la creación de aplicaciones web
+			, incluyendo aplicaciones RESTful
+			 utilizando Spring MVC. Utiliza Tomcat como el servidor web predeterminado.
+		-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<!-- 
+		spring-boot-devtools: Proporciona un conjunto de herramientas que son útiles 
+		durante el desarrollo de aplicaciones Spring Boot, 
+		como la recarga automática de la aplicación cada vez que se cambia un archivo.
+		
+		-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
+		
+		<!-- 
+		 Project Lombok es una biblioteca java que se conecta automáticamente a su editor y herramientas de construcción, incrementando su productividad al reducir el código
+		  como getters, setters, constructores, etc.
+		-->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
+		
+		<!--
+		spring-boot-starter-tomcat: Spring Boot utiliza Tomcat como servidor web predeterminado. 
+		Esta dependencia asegura que Tomcat está en el classpath 
+		y lo integra automáticamente con la aplicación.		
+		 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
 			<scope>provided</scope>
 		</dependency>
+		<!--
+			spring-boot-starter-test: Proporciona todas las dependencias que necesitas para escribir pruebas para tu aplicación
+			, incluyendo JUnit, Hamcrest, Mockito y Spring Test.
+		-->
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 		
+		<!--
+		tomcat-embed-jasper: Esta dependencia se utiliza para compilar páginas JSP.
+		 Es necesaria si tu aplicación utiliza JSP.
+		 -->	
+		
 		<dependency>
 	      <groupId>org.apache.tomcat.embed</groupId>
 	      <artifactId>tomcat-embed-jasper</artifactId>
 	      <scope>provided</scope>
     	</dependency>
-
-	   
 
 		
 	</dependencies>
